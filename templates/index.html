@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Together</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Together</h1>
+        <form id="travellerForm">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+            
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" required>
+            
+            <label for="place_from">Place From:</label>
+            <input type="text" id="place_from" name="place_from" required>
+            
+            <label for="place_to">Place To:</label>
+            <input type="text" id="place_to" name="place_to" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Phone Number</th>
+                            <th>Place From</th>
+                            <th>Place To</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
